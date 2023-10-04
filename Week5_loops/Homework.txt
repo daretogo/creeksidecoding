@@ -1,0 +1,41 @@
+Assignment: Create a Simple Number Guessing Game
+
+Objective: To create a Python program that allows a player to guess a randomly generated number within a certain range.
+
+Requirements:
+
+The program should generate a random number between 1 and 100 (you can adjust the range as needed).
+The player should be allowed to guess the number.
+If the player's guess is too low, the program should inform them and allow them to guess again.
+If the player's guess is too high, the program should inform them and allow them to guess again.
+If the player's guess is correct, the program should congratulate them and display the number of attempts it took.
+The program should keep track of the number of attempts the player has made.
+The game should continue until the player guesses the correct number.
+OPTIONALLY: After the game is won, ask the player if they want to play again. If they do, generate a new random number and reset the attempts counter. If they don't, end the game.
+Hints:
+
+Use a while loop to keep the game running until the player wins or decides to quit.
+You can use the random module in Python to generate random numbers.
+You can use an if statement to compare the player's guess with the random number and provide feedback.
+You'll need a counter to keep track of the number of attempts.
+You can use an input() function to get the player's guess and use int() to convert it to an integer.
+Example Output (Partial):
+
+EXAMPLE OUTPUT: 
+
+----------------------------------------------------------
+Welcome to the Number Guessing Game!
+I'm thinking of a number between 1 and 100.
+
+Take a guess: 50
+Too low! Try again.
+
+Take a guess: 75
+Too high! Try again.
+
+Take a guess: 63
+Congratulations! You guessed the number in 3 attempts.
+
+Do you want to play again? (yes/no): no
+Thanks for playing!
+------------------------------------------------------------
