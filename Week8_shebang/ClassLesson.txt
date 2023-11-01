@@ -1,0 +1,42 @@
+Segment 2: Understanding File Permissions (10 minutes)
+
+“First up, we need to talk about file permissions. In computer systems, file permissions control who can do what with a file. There are three main types of permissions: read, write, and execute. Read permissions let you view a file, write permissions let you change it, and execute permissions let you run it as a program. Today, we're focusing on the execute permission for Python scripts.
+
+Let’s make a Python script executable. Open your terminal, and navigate to the directory with your Python script. Run ‘ls -l’ to see the current permissions of your files. You'll notice a series of letters and dashes on the left side of the file listing - these represent the file's permissions.
+
+To make your script executable, type ‘chmod +x scriptname.py’. The ‘chmod’ command changes the file's mode, and ‘+x’ adds execute permissions. After running this command, run ‘ls -l’ again and notice how the permissions have changed.
+
+Now, your Python script is executable, which means you can run it directly from the command line!”
+
+Segment 3: Introduction to Shebang (10 minutes)
+
+“Next up, let's talk about the shebang line. This is a special line at the very top of a script that tells the system what program to use to run the file. For Python scripts, it usually looks like ‘#!/usr/bin/env python3’.
+
+Let's add a shebang line to our script. Open it up in your text editor, and at the very top, add ‘#!/usr/bin/env python3’. Save your file.
+
+The shebang line is really useful because it lets us run our script directly from the command line without having to type ‘python’ before the script name. Plus, it works regardless of where your Python interpreter is located, thanks to the ‘env’ command.”
+
+Segment 4: Running Python Scripts from the Command Line (5 minutes)
+
+“Now that our script is executable and has a shebang line, we can run it directly from the command line. Go back to your terminal, make sure you’re in the same directory as your script, and type ‘./scriptname’ to run it.
+
+You’ll notice that the script runs just like if you had typed ‘python scriptname.py’. And here’s a cool tip: you can even remove the ‘.py’ extension from your script, and it will still run just fine, thanks to the shebang line and execute permissions.”
+
+Segment 5: Introduction to HTTP Requests and the requests Module (10 minutes)
+
+“Alright, now let's switch gears a bit and talk about HTTP. HTTP stands for Hypertext Transfer Protocol, and it's the foundation of data communication on the World Wide Web. When you visit a webpage, your browser makes an HTTP request to a server, which sends back the webpage as a response.
+
+In Python, we can make HTTP requests using a library called ‘requests’. To use it, you first need to install it. Open your terminal and run ‘pip install requests’.
+
+Now, in your Python script, you can use the ‘requests.get(url)’ function to make an HTTP GET request. This function returns a response object, which includes the status code, the content of the page, and other information.
+
+In the ‘ClassExample.py’ script, there is a function called ‘make_http_request’ that demonstrates how to make a GET request and print the status code. Try running the script to see it in action.”
+
+Segment 6: Creating a Web Scraper Command-Line Tool (10 minutes)
+
+“For the final part of today's lesson, we're going to create a small web scraper command-line tool. This tool will make an HTTP request to a webpage, extract the title of the page, and print it out.
+
+In the ‘ClassExample.py’ script, there's a function called ‘scrape_webpage_title’ that does exactly this. It uses the ‘requests’ library to make the HTTP request, and a library called ‘BeautifulSoup’ to parse the HTML and extract the title.
+
+To run the web scraper tool, simply type ‘./ClassExample.py’ in your terminal, and you should see the title of the example webpage printed out. Feel free to change the URL in the script to scrape a different webpage.”
+
