@@ -1,0 +1,9 @@
+Alright guys and gals 
+
+You should remember your homework from class, but it was:
+
+- Find 3 different websites that have some interesting data on it you can "scrape".   Ideas:  quotes, recipies, sports scores, weather
+- Use the Week8 HW Code to download the code for those 3 websites
+- Scroll through the code and find the interesting part from the website (hint:  use the "find" function to look for keywords!)
+
+Next week we're gonna learn how to filter all that data from the websites and get just the part we want. 
