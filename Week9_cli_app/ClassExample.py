@@ -6,8 +6,9 @@ import random
 # Function to fetch the content of the web page
 def fetch_quotes_page():
     # The URL from which we'll fetch the quotes
-    url = "https://blog.hubspot.com/sales/famous-quotes"
-    
+    #url = "https://blog.hubspot.com/sales/famous-quotes"
+    #url = "https://www.starwars.com/news/15-star-wars-quotes-to-use-in-everyday-life"
+    url = "https://www.teenvogue.com/story/harry-potter-jk-rowling-books-another-weasley-character"
     # Make an HTTP GET request to the URL
     response = requests.get(url)
     
