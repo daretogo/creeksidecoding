@@ -15,7 +15,7 @@
 # the URL of the recipe, and the student's explanation of the food's relevance to the holiday.
 
 # We can represent this data using an ordered list stored in a variable. Here's an example:
-holiday_data = ["holiday_name", "student_name", "holiday_date", "recipe_URL", "relevance_explanation"]
+holiday_data = ["holiday_name", "student_name", "holiday_date", "recipe_URL", "relevance_explanation", "recipe_advice"]
 
 # During today's class, you will have some time to review each person's file in the repository.
 # Your task is to create a series of variables like 'holiday_data' for each entry. 
