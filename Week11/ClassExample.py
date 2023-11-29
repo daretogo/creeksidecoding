@@ -85,6 +85,34 @@ that so please use:
                 
 #################################################################################################################        
                 
-                
+# Let's talk requirements! 
+
+# 1. Understanding the Project Requirements 📋
+# First, we need to outline what our application must do. This is like creating a recipe for our code! Here's what we've got:
+
+# Input: 
+# Output: 
+
+# 2. Date Tracking and Parsing
+
+# Current Date: 
+# Input Date: 
+
+# 3. Comparing Dates 🔍
+
+
+# 4. Displaying the Recipe 🥘
+
+#????  
+
+# While Loop: We can use a while True loop to keep our program running. It's like saying, "Keep going until we decide to stop."
+# Breaking the Loop: We'll provide a way to exit the program, maybe by typing 'exit'.
+
+
+# 6. Handling Errors 🚫
+# What if someone types in an invalid date? We need to handle such situations gracefully.
+
+# List of Requirements: Write down everything our application needs to do. Think about the inputs, outputs, and special cases.
+# Program Structure Thoughts: Discuss with your team how we should structure our program. How do we keep it running? How do we handle different inputs?
                 
                 
