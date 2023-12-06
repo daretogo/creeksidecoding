@@ -1,0 +1,45 @@
+Assignment: Create a Simple Quiz Game
+
+Objective: Build a Python program that quizzes the user with multiple-choice questions and provides feedback on their answers.
+
+Requirements:
+
+The program should ask the user their name and greet them personally.
+Create at least three multiple-choice questions related to a topic of your choice (e.g., science, history, or a favorite book). Each question should have three answer options.
+Use if/then statements to check if the user's answers are correct.
+Keep track of the user's score and display it at the end of the quiz.
+Provide feedback to the user for each question, indicating whether their answer was correct or not.
+Use f-strings to personalize the feedback with the user's name.
+
+
+
+Here is an example of what the OUTPUT of your game should look like: 
+
+--------------------------------------------------------------------------
+Welcome to the Quiz Game!
+What's your name? Alice
+
+Great, Alice! Let's start the quiz.
+Question 1: What is the capital of France?
+A) London
+B) Berlin
+C) Paris
+Your answer: C
+Correct, Alice!
+
+Question 2: What is the largest planet in our solar system?
+A) Earth
+B) Mars
+C) Jupiter
+Your answer: B
+Sorry, Alice. The correct answer is C) Jupiter.
+
+Question 3: Who wrote the play "Romeo and Juliet"?
+A) Charles Dickens
+B) William Shakespeare
+C) Jane Austen
+Your answer: B
+Correct, Alice!
+
+Your score: 2 out of 3. Well done!
+---------------------------------------------------------------------------
