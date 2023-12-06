@@ -1,0 +1,13 @@
+1
+	same date format
+2
+	haldling errrors
+3
+	halding when people put in the wrong date / or removing input and  
+4	knowing the current date
+
+5
+	knowing which hoilday's are when 
+vertans day
+https://www.yummly.com/recipe/National-Cherry-Pie-Day-_-Almond-Cherry-Pie-1133881?prm-v1
+pie goes to any hoilday
