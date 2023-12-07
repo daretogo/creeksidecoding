@@ -13,4 +13,6 @@ From that page you should see a message that shows the number of commits:
 
 ![Screenshot showing commits](images/see_commits.png)
 
-When you click on that link, you'll be shown a "commit history" 
+When you click on that link, you'll be shown a "commit history" which will show you all of the contributions others have made to our repo:
+
+![Screenshot of commit history](images/commit_history.png)
