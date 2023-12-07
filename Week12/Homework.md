@@ -105,7 +105,7 @@ hoilday_data = ["Valentines Day", "Grace", "0214", "https://wilton.com/valentine
 Now - there is an obvious problem with this data - the variable name "holiday_data" is used over and over but variable names need to be unique.
 
 Let's re-shape this data so that it's one variable 'holidays_data' that has all the entries we've made. 
-If you need an example of the holiday data with these cahnges, I've provided it [as the file holiday_data.txt](holiday_data.txt) for you to review. 
+If you need an example of the holiday data with these cahnges, I've provided it [as the file holiday_data.txt](/Week12/HomeworkAnswers/holiday_data.txt) for you to review. 
 
 
 
