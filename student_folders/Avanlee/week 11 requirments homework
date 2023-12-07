@@ -1,0 +1,33 @@
+################################################################################################################        
+                
+# Let's talk requirements! 
+
+# 1. Understanding the Project Requirements 📋
+# First, we need to outline what our application must do. This is like creating a recipe for our code! Here's what we've got:
+
+# Input: the user must input the date for that day but NOT THE HOLIDAY DATE! 
+# Output: the computer should output the holiday and not the ones in the past.  
+
+# 2. Date Tracking and Parsing
+So for example if the date the user imputs is equal ways away from two different varrible holidays then you would chosse the one that the month numbers are larger. 
+
+# Current Date: the current date and the input date soposed to be the same
+# Input Date: 
+
+# 3. Comparing Dates 🔍
+you must pick the one in the future
+
+
+# 4. Displaying the Recipe 🥘
+probably their should be a url which applies to the input
+
+#????  
+
+# While Loop: We can use 
+# What if someone types in an invalid date? We need to handle such situations gracefully.
+
+# List of Requirements: Write down everything our application needs to do. Think about the inputs, outputs, and special cases.
+# Program Structure Thoughts: Discuss with your team how we should structure our program. How do we keep it running? How do we handle different inputs?
+                
+                
+ay that is next in line and not the o

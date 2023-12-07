@@ -1,0 +1,17 @@
+holiday_data = ["holiday_name", "student_name", "holiday_date", "recipe_URL", "relevance_explanation", "recipe_advice"]
+
+halloween = ["Halloween", "Abran", "1031", "https://www.pillsbury.com/recipes/crescent-mummy-dogs/d52a57d7-ab8a-4a1c-8dae-f9f90d03b912", "Halloween food recipe", "Halloween food recipe"]
+
+national_star_wars_day = ["National Star Wars Day", "Carter", "0504", "https://www.yummly.com/recipe/Baby-Yoda-Deviled-Eggs-with-Avocado-9369868", "Hello this is Carter and I got National starwas day and this is a recipe for Grogu deviled eggs sorry it is so late.", "follow the recipe",]
+
+st_paddys_day = ["St Patricks Day", "Clare", "0317", "https://www.thecountrycook.net/st-paddys-day-oreo-bark/", "This is a good desert for St patrick’s day because the green on the bar matches the holiday", "follow the recipe"]
+
+christmas = ["Christmas", "Avanlee", "1225", "https://www.allrecipes.com/recipe/235104/peppermint-holiday-cookies/", "This is a fun recipe to fill santas tummy! Enjoyable and easy to make, merry Cristmas!", "dont eat the ingreidients"]
+
+thanksgiving = ["Thanksgiving", "Shane", "1123", "", "Mashed potatoes have become a staple dish on Thanksgiving tables across America. and I call it Thanksgiving food.", "follow the recipe"]
+
+easter = ["Easter", "Violet", "0331", "https://www.southernliving.com/butterscotch-bird-nests-7152086", "its easter related bc its eggs in a nest because most eggs hatch in the spring", "follow the recipe"]
+
+valentines_day = ["Valentines Day", "Grace", "0214", "https://wilton.com/valentines-day-cake-pops/wlproj-9093/", "I think this goes well with the whole Valentine's Day idea because you can make these with red velvet cake and frost them with red, white, and pink icing and coat them with cutsie-pootsie sprinkles.", "Try making them with all different kinds of cake!"]
+
+vetrans_day = ["Vetrans Day", "Conner", "1111", "", "", ""]
