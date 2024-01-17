@@ -16,7 +16,7 @@ If you suggest a feature that requires data, try to gather as much of that data 
 Watch this video for a high level overview of the physical :  https://www.youtube.com/watch?v=Sfzo4xm5eX8 
 
 
-Watch this video, and  fill out these notes as you watch:    https://www.youtube.com/watch?v=Sfzo4xm5eX8 
+Watch this video, and  fill out these notes as you watch:    https://www.youtube.com/watch?v=vvpCnjyjTuU&t
 
 
 What does URL stand for? 
