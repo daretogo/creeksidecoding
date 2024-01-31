@@ -1,0 +1,10 @@
+What does URL stand for? 
+A=UNiform resource LOcator
+What does the S in HTTPS stand for? 
+A=Secure
+What is the "yellow pages" for the internet?   
+A=
+What does DNS stand for? 
+A=Domain Name System
+What does OSI stand for? 
+A=Open systems Interconection
