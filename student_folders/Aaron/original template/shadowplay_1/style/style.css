@@ -34,7 +34,7 @@ a, a:hover
 
 a:hover
 { border-bottom: 1px solid;
-  color: #A4AA04;}
+  color: #04aa99;}
 
 img
 { border: 0px; 
@@ -185,7 +185,7 @@ ul#menu li.selected a, ul#menu li.selected a:hover
   color: #FFF;}
 
 ul#menu li a:hover
-{ color: #A4AA04;}
+{ color: #1704aa;}
 
 #site_content
 { width: 875px;
@@ -215,7 +215,7 @@ ul#menu li a:hover
   border: none;} 
 
 .sidebar li a.selected, .sidebar li a:hover, .sidebar li a.selected:hover
-{ color: #A4AA04;} 
+{ color: #aa0404;} 
 
 #content
 { text-align: left;
