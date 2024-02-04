@@ -34,7 +34,7 @@ a, a:hover
 
 a:hover
 { border-bottom: 1px solid;
-  color: #A4AA04;}
+  color: #355f06;}
 
 img
 { border: 0px; 
@@ -115,7 +115,7 @@ ol li
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #B8BD20;}
+{ color: #6ee2c9;}
 
 #logo_text a:hover .logo_colour
 { color: #777;}
@@ -185,7 +185,7 @@ ul#menu li.selected a, ul#menu li.selected a:hover
   color: #FFF;}
 
 ul#menu li a:hover
-{ color: #A4AA04;}
+{ color: #04aaa2;}
 
 #site_content
 { width: 875px;
