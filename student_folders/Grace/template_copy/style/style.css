@@ -88,34 +88,36 @@ ol li
 { margin-left: auto; 
   margin-right: auto;}
 
-#header
-{ background: url(back.png) repeat-x;}
+
 
 #logo
 { width: 870px;
   height: 127px;
   position: relative;
-  background: transparent url(logo.png) no-repeat right;}
+  background: transparent url(logo.png) }
 
 #logo #logo_text 
 { position: absolute; 
   top: 0;
   left: 0;}
 
+#header
+{ background: url(back.png)repeat-x; }
+
 #logo h1, #logo h2
-{ font: normal 300% 'century gothic', arial, sans-serif;
+{ font: normal 300% '', arial, sans-serif; }
   border-bottom: 0;
   text-transform: none;
-  margin: 0 0 0 9px;}
+  
 
 #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
 { padding: 22px 0 0 0;
-  color: #777;
+  color: #777777;
   letter-spacing: 0.1em;
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #6ee2c9;}
+{ color: #cf6ee2;}
 
 #logo_text a:hover .logo_colour
 { color: #777;}
@@ -137,7 +139,7 @@ ol li
 #logo h2
 { font-size: 120%;
   padding: 4px 0px 0px 0px;
-  color: #BBB;}
+  color: #ff00bf;}
 
 #logo a
 { border: none;}
