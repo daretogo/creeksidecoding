@@ -29,8 +29,6 @@ Grace - weather
 Carter - teacher contact info page
     so maybe consider just doing emails
     get consent from teachers before we post their emails
-    maybe some people even will share their phone number
-
 
 Abran and Conner- class schedule 
     section per group:  HS, MS, Upper Elem, Lower Elem, Kindergarten??? 
