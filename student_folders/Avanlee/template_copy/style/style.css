@@ -6,7 +6,7 @@ body
   margin: 0px;
   font-size: .78em;
   background: #F6F4F0;
-  color: #635B53;}
+  color: #000000;}
 
 p
 { margin: 0px;
@@ -18,23 +18,23 @@ h1, h2, h3, h4
   padding: 7px 0px 5px 0px; 
   margin: 0px 0px 12px 0px; 
   font-weight: normal;
-  color: #342F28;
+  color: #000000;
   font-family: serif;}
 
 h1, h3
 { text-transform: uppercase;
   margin: 10px 0px 20px 0px;
   padding: 5px 20px 5px 0px;
-  border-bottom: 1px solid #CCC6B4;}
+  border-bottom: 1px solid #000000;}
 
 a, a:hover
 { border-bottom: 1px dotted;
-  color: #635B53;
+  color: #000000;
   text-decoration: none;}
 
 a:hover
 { border-bottom: 1px solid;
-  color: #A4AA04;}
+  color: #000000;}
 
 img
 { border: 0px; 
@@ -64,8 +64,8 @@ form
 blockquote
 { margin: 20px 0px 20px 0px; 
   padding: 10px 20px 0px 20px;
-  border: 1px solid #E5E5DB;
-  background: #FFF;}
+  border: 1px solid #000000;
+  background: #ffffff;}
 
 ul
 { margin: 2px 0px 18px 16px;
@@ -110,20 +110,20 @@ ol li
 
 #logo_text h1, #logo_text h1 a, #logo_text h1 a:hover 
 { padding: 22px 0 0 0;
-  color: #777;
+  color: #000000;
   letter-spacing: 0.1em;
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #B8BD20;}
+{ color: #000000;}
 
 #logo_text a:hover .logo_colour
-{ color: #777;}
+{ color: #000000;}
 
 #logo_text h2
 { font-size: 120%;
   padding: 4px 0 0 0;
-  color: #BBB;}
+  color: #000000;}
 
 #logo h1, #logo h2
 { margin: 0;
@@ -132,12 +132,12 @@ ol li
 #logo h1
 { font-size: 300%;
   padding: 22px 0px 0px 0px;
-  color: #777;}
+  color: #000000;}
 
 #logo h2
 { font-size: 120%;
   padding: 4px 0px 0px 0px;
-  color: #BBB;}
+  color: #000000;}
 
 #logo a
 { border: none;}
@@ -168,7 +168,7 @@ ul#menu li a
   text-decoration: none; 
   padding: 9px 22px 5px 16px;
   text-align: center;
-  color: #FFF;
+  color: #000000;
   text-transform: uppercase;
   border: none;} 
 
@@ -178,14 +178,14 @@ ul#menu li.selected a
 
 ul#menu li.selected
 { margin: 7px 0 0 0;
-  background: #635B53 url(tabs.png) no-repeat 0 0px;}
+  background: #ffffff url(tabs.png) no-repeat 0 0px;}
 
 ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: #635B53 url(tabs.png) no-repeat 100% 0px;
-  color: #FFF;}
+{ background: #ffffff url(tabs.png) no-repeat 100% 0px;
+  color: #000000;}
 
 ul#menu li a:hover
-{ color: #A4AA04;}
+{ color: #000000;}
 
 #site_content
 { width: 875px;
@@ -211,17 +211,18 @@ ul#menu li a:hover
   padding: 4px 0px 4px 35px;
   display: block;
   background: transparent url(arrow.png) no-repeat left center;
-  color: #555;
+  color: #000000;
   border: none;} 
 
 .sidebar li a.selected, .sidebar li a:hover, .sidebar li a.selected:hover
-{ color: #A4AA04;} 
+{ color: #000000;} 
 
 #content
 { text-align: left;
   width: 624px;
   float: left;
   padding: 20px 10px 15px 0px;}
+
 
 #footer
 { width: 100%;
@@ -231,25 +232,25 @@ ul#menu li a:hover
   padding: 20px 0px 4px 0px;
   margin-bottom: 20px;
   text-align: center; 
-  background: #313131;
-  color: #A8AA94;
-  border-top: 4px solid #A4AA04;
+  background: #ffffff;
+  color: #000000;
+  border-top: 4px solid #000000;
   text-transform: uppercase;
   letter-spacing: 0.1em;}
 
 #footer a
-{ color: #A8AA94;
+{ color: #000000;
   text-decoration: none;}
 
 #footer a:hover
-{ color: #FFF;
+{ color: #000000;
   text-decoration: none;}
 
 .search
 { width: 122px;
-  border: 1px solid #CCC6B4;
+  border: 1px solid #000000;
   padding: 4px;
-  color: #635B53;}
+  color: #000000;}
 
 .form_settings
 { margin: 15px 0 0 0;}
@@ -266,9 +267,9 @@ ul#menu li a:hover
 { padding: 5px; 
   width: 299px; 
   font: 100% arial; 
-  border: 1px solid #E5E5DB; 
-  background: #FFF; 
-  color: #47433F;}
+  border: 1px solid #000000; 
+  background: #ffffff; 
+  color: #000000;}
   
 .form_settings .submit
 { font: 100% arial; 
@@ -278,7 +279,7 @@ ul#menu li a:hover
   height: 33px;
   padding: 2px 0 3px 0;
   cursor: pointer; 
-  background: #3B3B3B; 
+  background: #000000; 
   color: #FFF;}
 
 .form_settings textarea, .form_settings select
@@ -298,20 +299,20 @@ ul#menu li a:hover
 .separator
 { width: 100%;
   height: 0;
-  border-top: 1px solid #D9D5CF;
-  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   margin: 0 0 20px 0;}
   
 table
 { margin: 10px 0 30px 0;}
 
 table tr th, table tr td
-{ background: #3B3B3B;
-  color: #FFF;
+{ background: #000000;
+  color: #000000;
   padding: 7px 4px;
   text-align: left;}
   
 table tr td
-{ background: #FFF;
-  color: #47433F;
+{ background: #ffffff;
+  color: #000000;
   border-top: 1px solid #FFF;}
