@@ -34,7 +34,7 @@ a, a:hover
 
 a:hover
 { border-bottom: 1px solid;
-  color: #aa7e04;}
+  color: #0044ff;}
 
 img
 { border: 0px; 
@@ -115,7 +115,7 @@ ol li
   text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #ffe600;}
+{ color: #03c2fcfb;}
 
 #logo_text a:hover .logo_colour
 { color: #777;}
@@ -185,7 +185,7 @@ ul#menu li.selected a, ul#menu li.selected a:hover
   color: #FFF;}
 
 ul#menu li a:hover
-{ color: #131311;}
+{ color: #00faed;}
 
 #site_content
 { width: 875px;
@@ -199,7 +199,7 @@ ul#menu li a:hover
 
 .sidebar ul
 { width: 178px; 
-  padding-top: 4px;
+  padding-top: 4px; 
   margin: 4px 0px 30px 0px;}
 
 .sidebar li
@@ -210,12 +210,12 @@ ul#menu li a:hover
 { text-decoration: none; 
   padding: 4px 0px 4px 35px;
   display: block;
-  background: transparent url(arrow.png) no-repeat left center;S
+  background: transparent url(arrow.png) no-repeat left center;
   color: #555;
   border: none;} 
 
 .sidebar li a.selected, .sidebar li a:hover, .sidebar li a.selected:hover
-{ color: #120f11;} 
+{ color: #0343f3;} 
 
 #content
 { text-align: left;
@@ -233,7 +233,7 @@ ul#menu li a:hover
   text-align: center; 
   background: #313131;
   color: #A8AA94;
-  border-top: 4px solid #04d1ff;
+  border-top: 4px solid #2600ff;
   text-transform: uppercase;
   letter-spacing: 0.1em;}
 
