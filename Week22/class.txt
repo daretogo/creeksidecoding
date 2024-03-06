@@ -1,0 +1,80 @@
+# Can you really believe we are at week 22!?!?!   
+
+We really only have 30 total classes by the time you take out spring break, so only like 8 more classes! 
+
+Our high level plan: 
+
+- This lesson (22) and probably the next 2 dedicated to this temperature sensor project (23, 24)
+- THe last 5 classes 25-30 we'll dedicate to personalized hardware projects, where you get to decide what you're making and I'll support you! 
+
+####   THE PROJECT ##########################################################################################################################
+
+The current project is to use your Raspberry Pi 400 to read the temperature of a DS18B20 temperature sensor once every 3 seconds.   
+Additionally, you must hook up a green, red, and blue LED to your raspberry pi 400. 
+You must write code that compares the temperature reading to your pre-defined thresholds of "comfortable" and "too hot" and "too cold"
+You must write code that makes the green led light when you are in "comfortable" range
+You must write code that makes the blue led light when you are in the "too cold" range
+You must write code that makes the red led light when you are in the "too hot" range. 
+
+We should be able to test and demonstrate our LEDs changing by using ice cubes to cool the sensor, then holding it in our hands to warm it up. 
+
+###############################################################################################################################################
+
+
+## Tools you're going to need: 
+
+- A positive can-do attitude!    This is new, it will be different, but you can do it! 
+- A willingness to research!     (Raspberry pi projects are SUPER common, the internet is full of great examples and help - that's what makes the pi so great!)
+
+
+# Our first actual physical computing project
+
+Each student has a supply bag that contains: 
+
+- Breadboard
+- 1 or more DS18B20  temperature sensor module
+- Many dupont male to female connectors
+- many male to maile adapters for cables
+- at least 1 Each:
+    - red led
+    - blue led
+    - green led
+
+#progression idea:
+I know this might seem like a big thing if you try to take it all at once.  So here's how I would think about this to break it down into smaller parts to get there:
+- figure out just how to get one single reading from the DS18B20 sensor
+- figure out how to re-use that to put it in a loop to get the temperature every few seconds
+- totally aside from the temperature sensor - figure out how to connect an LED to the pi
+- figure out how to control the on and off of the LED
+- go  back to your loop that gets the temp every few seconds, and integrate your LED turning on/off
+- enhance the loop logic by using comparisons and if statements to only turn on the LED if it's > or < a certain temperature. 
+
+
+More hints: 
+
+    GPIO Setup: This part of the script initializes the GPIO pins that the LEDs are connected to. It sets them as output pins, meaning the script can control whether each LED is turned on or off.
+    Reading Temperature: Instead of reading raw data directly from the sensor, use the DS18B20 class from the ds18b20 module (python -m pip install ds18b20) to read the temperature. This simplifies the code, making it easier to read the temperature with a single method call.
+    Controlling LEDs: Based on the temperature reading, the control_leds function decides which LED to turn on. If the temperature is too cold (below 65°C), the blue LED turns on. If it's too hot (above 80°C), the red LED lights up. Otherwise, the green LED indicates a comfortable temperature.
+    Main Loop: The script enters a loop where it continuously reads the temperature every 3 seconds and updates the LEDs accordingly. It prints the current temperature to the console for monitoring. The loop can be exited gracefully with a keyboard interrupt (Ctrl+C), at which point it cleans up the GPIO settings.
+
+
+
+
+
+Things to check out this week!
+
+- tinkercad.com                  This is a 3d modeling program where you can design your own objects to have "printed" into real world things.   When you're a "maker" it  can be so useful to desing and print something specific and unique or maybe even just a slight variation of a storebought thing that you want to make some change to. 
+- thingiverse.com
+- printables.com                (both of these are repositories of mostly free 3d models that you can use as a starting basis for your project! )
+
+
+
+
+Impoprtant Notes:  Your DS18b20 module already has the 4.7ohm "pull up resistor" on it.  You do NOT need to add an additional resistor. 
+
+Reference material: 
+
+https://pi4j.com/1.3/pins/rpi-400.html
+https://pinout.xyz/
+https://learn.adafruit.com/adafruits-raspberry-pi-lesson-11-ds18b20-temperature-sensing/hardware    
+https://randomnerdtutorials.com/raspberry-pi-ds18b20-python/

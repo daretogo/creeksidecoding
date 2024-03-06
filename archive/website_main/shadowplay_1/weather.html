@@ -9,7 +9,35 @@
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
-
+<script>
+  function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+  </script>
 <body>
   <div id="main">
     <div id="header">
@@ -39,7 +67,7 @@
         <h3>Snow Days</h3>
         <h4>When We Are Closing</h4>
         
-        <p>We follow Elizabeth High School to see when we are closing for weather. Visit the website below for more info.<br /><a href="#">https://www.elizabethschooldistrict.org/EHS</a></p>
+        <p>We follow Elizabeth High School to see when we are closing for weather. <br /><a href="https://www.elizabethschooldistrict.org/EHS">Visit this website for more info.</a></p>
         
 
         
@@ -85,10 +113,10 @@
       </div>
     </div>
     <div id="content_footer"></div>
-    <div id="footer">
-      <p><a href="index.html">Home</a> | <a href="schedules.html">Schedules</a> | <a href="weather.html">weather</a> | <a href="">Calendar</a> | <a href="pictures.html">Pictures</a> | <a href="">Contact info</a> | <a href="getinvolved.html">How to get involved</a></p>
-      
-    </div>
-  </div>
+    <div w3-include-html="footer.html"></div>
 </body>
 </html>
+
+<script>
+  includeHTML();
+</script>
