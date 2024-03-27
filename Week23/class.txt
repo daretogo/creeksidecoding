@@ -1,0 +1,52 @@
+# Wiring and temp reading! 
+
+I think we had some wires crossed last class, and some temperature sensors were damaged.  
+No biggie!  I have some of these that are packaged was waterproof we can use. 
+
+
+# PULL UP resistor
+
+The little boards we used had a built in pull-up resistor, but when using these other sensors they do not have that built in. 
+I have some 4.7k resistors to share, and we should look at this diagram: 
+
+https://randomnerdtutorials.com/raspberry-pi-ds18b20-python/
+
+
+Once we have turned on one-wire protocol (sudo raspi-config -> interfaces) and you have the sensor wired up properly, then you should:
+
+cd /sys/bus/w1/devices/
+ls -l
+
+And what you should see is one (or more) entries with a serial number.   An example:
+
+aaron@raspberrypi:~/Documents/creeksidecoding $ cd /sys/bus/w1/devices/
+aaron@raspberrypi:/sys/bus/w1/devices $ ls -l
+total 0
+lrwxrwxrwx 1 root root 0 Mar 27 14:23 28-0313979442ef -> ../../../devices/w1_bus_master1/28-0313979442ef
+lrwxrwxrwx 1 root root 0 Mar  6 17:09 w1_bus_master1 -> ../../../devices/w1_bus_master1
+
+
+note, if we add an additional sensor, we can get two serial numbers, and thus can take two seperate  temperature readings. 
+
+
+## DHT 22 
+
+For the DHT22 sensor that I have if we don't have enough DS18B20's to go around can be read using a different library and they are wired to 5v, a GPIO data line, and GND.  The packages are labeled, the only big difference here is that you get back 2 values - temp AND humidity, and that these sensors use 5v instead of 3v. 
+
+
+
+## Moving on to simple LED control.   We might need to revisit how to use the breadboard.  Might need some male ends crimped onto LED wires. 
+
+
+## Fun idea?  
+
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = celsius * (9/5) + 32
+    return fahrenheit
+
+# Example usage:
+celsius_temperature = 25
+fahrenheit_temperature = celsius_to_fahrenheit(celsius_temperature)
+print(f"{celsius_temperature} C is {fahrenheit_temperature} F")
+
+
