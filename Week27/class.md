@@ -1,0 +1,1 @@
+# This week we spent nearly the entire time working on wiring up our Pi's.  Then I pushed you code in the Week26 folder. 

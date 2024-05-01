@@ -23,7 +23,7 @@ i2cdetect -y 1
 
 
 
-git@github.com:adafruit/Adafruit_Python_SSD1306.git
+git clone git@github.com:adafruit/Adafruit_Python_SSD1306.git
 
 cd into new folder
 
