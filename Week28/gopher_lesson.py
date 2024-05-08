@@ -35,7 +35,7 @@ initial_max_light_on_time = 3  # Max initial duration for an LED to be on
 initial_max_wait_time = 4  # Max initial time to wait before lighting up another LED
 min_light_on_time = 0.5  # Minimum time an LED can be on
 min_wait_time = 1  # Minimum time to wait before lighting up another LED
-
+minledon = 0.1
 def debug_print(message):
     """ Print debug messages if debugging is enabled. """
     if debug:
@@ -55,6 +55,8 @@ def turn_off_led(index):
 def get_time_values(score):
     """ Calculate the current maximum wait time and light on time based on the score. """
     rounds = score // hit_milestone  # Determine how many milestones have been reached
+    score_lives()
+
     current_max_light_on_time = max(initial_max_light_on_time * (decay_rate_duration ** rounds), min_light_on_time)
     current_max_wait_time = max(initial_max_wait_time * (decay_rate_interval ** rounds), min_wait_time)
     return current_max_light_on_time, current_max_wait_time
@@ -63,13 +65,18 @@ def game_loop():
     """ The main game loop where all the gameplay happens. """
     global score, lives  # Use the global score and lives variables
 
+def score_lives():
+    if score > 10
+        lives = lives + 1 
+
+
     try:
         while lives > 0:  # Keep playing until all lives are lost
             # Get current timing values based on score
             current_max_light_on_time, current_max_wait_time = get_time_values(score)
             led_index = random.randint(0, len(led_pins) - 1)  # Choose a random LED
             light_on_time = random.uniform(1, current_max_light_on_time)  # Randomize how long the LED will be on
-            wait_time = random.uniform(1, current_max_wait_time)  # Randomize how long to wait before lighting another LED
+            wait_time = random.uniform(minledon, current_max_wait_time)  # Randomize how long to wait before lighting another LED
 
             # Light up a random LED
             start_time = light_up_led(led_index)
