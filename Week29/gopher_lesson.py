@@ -120,47 +120,17 @@ def score_lives():
         print(f"Game over! Your final score is: {score}")
 
 if __name__ == "__main__":
-    while True:
-        print("Welcome to the Gopher Game!")
-        diff_level = input("Press 1 for EASY, 2 for MEDIUM, 3 for HARD")  # Wait for the player to be ready
-        if diff_level == "1":
-            score = 0  # Initialize score
-            lives = 3  # Start with 3 lives
-            cooldown = 0.4  # Cooldown period to prevent accidental button presses
-            debug = True  # If true, additional debug information will be printed
-            hit_milestone = 10  # Update timing variables every 10 successful hits
-            decay_rate_duration = 0.5  # Light duration decreases by 50% per milestone
-            decay_rate_interval = 0.8  # Wait interval decreases by 80% per milestone
-            initial_max_light_on_time = 3  # Max initial duration for an LED to be on
-            initial_max_wait_time = 4  # Max initial time to wait before lighting up another LED
-            min_light_on_time = 0.5  # Minimum time an LED can be on
-            min_wait_time = 1  # Minimum time to wait before lighting up another LED
-            minledon = 0.1
-        elif diff_level == "2": 
-            score = 0  # Initialize score
-            lives = 3  # Start with 3 lives
-            cooldown = 0.4  # Cooldown period to prevent accidental button presses
-            debug = True  # If true, additional debug information will be printed
-            hit_milestone = 10  # Update timing variables every 10 successful hits
-            decay_rate_duration = 0.5  # Light duration decreases by 50% per milestone
-            decay_rate_interval = 0.8  # Wait interval decreases by 80% per milestone
-            initial_max_light_on_time = 3  # Max initial duration for an LED to be on
-            initial_max_wait_time = 4  # Max initial time to wait before lighting up another LED
-            min_light_on_time = 0.5  # Minimum time an LED can be on
-            min_wait_time = 1  # Minimum time to wait before lighting up another LED
-            minledon = 0.1
-        elif diff_level == "3": 
-            score = 0  # Initialize score
-            lives = 3  # Start with 3 lives
-            cooldown = 0.4  # Cooldown period to prevent accidental button presses
-            debug = True  # If true, additional debug information will be printed
-            hit_milestone = 10  # Update timing variables every 10 successful hits
-            decay_rate_duration = 0.5  # Light duration decreases by 50% per milestone
-            decay_rate_interval = 0.8  # Wait interval decreases by 80% per milestone
-            initial_max_light_on_time = 3  # Max initial duration for an LED to be on
-            initial_max_wait_time = 4  # Max initial time to wait before lighting up another LED
-            min_light_on_time = 0.5  # Minimum time an LED can be on
-            min_wait_time = 1  # Minimum time to wait before lighting up another LED
-            minledon = 0.1
-        game_loop()  # Start the game loop
-    
+    print("Welcome to the Gopher Game!")
+    input("Press Enter when ready to start...")  # Wait for the player to be ready
+    game_loop()  # Start the game loop
+
+    # maybe here we use another "input" to ask the user if they want to play again? 
+
+    # maybe the input could additionally ask for difficulty level? 
+
+        #something like if difficulty = 3 then: 
+            # variable =1 
+            #variable =2 
+        # elseif difficulty = 2 then: 
+        # variable = 0.5
+        # variable = 0.5
