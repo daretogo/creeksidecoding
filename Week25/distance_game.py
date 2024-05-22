@@ -13,11 +13,11 @@ def measure_distance():
     time.sleep(0.00001)
     GPIO.output(PIN_TRIGGER, GPIO.LOW)
 
+    timeout_start = time.time()
     pulse_start_time = None
     pulse_end_time = None
 
     # Wait for the echo to start
-    timeout_start = time.time()
     while GPIO.input(PIN_ECHO) == 0:
         pulse_start_time = time.time()
         if pulse_start_time - timeout_start > 1:
@@ -30,12 +30,23 @@ def measure_distance():
         if pulse_end_time - timeout_start > 1:
             return None
 
-    if pulse_start_time is not None and pulse_end_time is not None:
+    if pulse_start_time and pulse_end_time:
         pulse_duration = pulse_end_time - pulse_start_time
         distance_cm = round(pulse_duration * 17150, 2)
         return distance_cm
     else:
         return None
+
+def get_valid_measurement():
+    max_retries = 5
+    for attempt in range(max_retries):
+        distance = measure_distance()
+        if distance is not None and 0 <= distance <= 400:  # Valid range for the sensor
+            return distance
+        print(f"Measurement failed. Retrying {attempt + 1}/{max_retries}...")
+        time.sleep(1)
+    print("Failed to get a valid measurement after several attempts.")
+    return None
 
 try:
     GPIO.setmode(GPIO.BOARD)
@@ -63,7 +74,7 @@ try:
             time.sleep(1)
 
         print("Measuring...")
-        distance_cm = measure_distance()
+        distance_cm = get_valid_measurement()
 
         if distance_cm is not None:
             distance_inches = distance_cm / 2.54
