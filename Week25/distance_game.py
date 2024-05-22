@@ -4,18 +4,38 @@ import random
 
 # Function to measure the distance using the ultrasonic sensor
 def measure_distance():
+    # Ensure trigger is low initially
+    GPIO.output(PIN_TRIGGER, GPIO.LOW)
+    time.sleep(0.5)
+    
+    # Send a 10us pulse to trigger
     GPIO.output(PIN_TRIGGER, GPIO.HIGH)
     time.sleep(0.00001)
     GPIO.output(PIN_TRIGGER, GPIO.LOW)
 
+    pulse_start_time = None
+    pulse_end_time = None
+
+    # Wait for the echo to start
+    timeout_start = time.time()
     while GPIO.input(PIN_ECHO) == 0:
         pulse_start_time = time.time()
+        if pulse_start_time - timeout_start > 1:
+            return None
+
+    # Wait for the echo to end
+    timeout_start = time.time()
     while GPIO.input(PIN_ECHO) == 1:
         pulse_end_time = time.time()
+        if pulse_end_time - timeout_start > 1:
+            return None
 
-    pulse_duration = pulse_end_time - pulse_start_time
-    distance_cm = round(pulse_duration * 17150, 2)
-    return distance_cm
+    if pulse_start_time is not None and pulse_end_time is not None:
+        pulse_duration = pulse_end_time - pulse_start_time
+        distance_cm = round(pulse_duration * 17150, 2)
+        return distance_cm
+    else:
+        return None
 
 try:
     GPIO.setmode(GPIO.BOARD)
@@ -44,11 +64,15 @@ try:
 
         print("Measuring...")
         distance_cm = measure_distance()
-        distance_inches = distance_cm / 2.54
-        distance_inches = round(distance_inches, 2)
 
-        difference = abs(target_inches - distance_inches)
-        print(f"You pulled out {distance_inches} inches. You were off by {difference} inches.")
+        if distance_cm is not None:
+            distance_inches = distance_cm / 2.54
+            distance_inches = round(distance_inches, 2)
+
+            difference = abs(target_inches - distance_inches)
+            print(f"You pulled out {distance_inches} inches. You were off by {difference} inches.")
+        else:
+            print("Measurement failed. Please try again.")
 
         print("\nLet's try again!\n")
         time.sleep(2)  # Wait a bit before the next round
