@@ -22,7 +22,7 @@ for pin in button_pins:
 
 # Game variables
 score = 0
-lives = 3pin
+lives = 3
 cooldown = 0.4
 debug = True  # Debugging enabled
 hit_milestone = 10  # every 10 successful hits
